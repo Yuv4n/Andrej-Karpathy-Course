@@ -19,3 +19,5 @@ Rendering the computation graph needs the Graphviz `dot` executable.
 ## Limits
 
 Loss values are training loss on four examples, not held-out performance.
+
+[MIT licence](LICENSE)
