@@ -15,6 +15,6 @@ jupyter notebook micrograd_exercises.ipynb
 
 Start with the exercises. The implementation notebook is `micrograd_implementation.ipynb`. Rendering its graph needs the Graphviz system executable (`dot`); the saved Windows PATH line does not install it.
 
-The exercise cells ran during review. An isolated `Value` check produced gradient 5 for `x*x + x` at `x=2`. The implementation notebook is not runnable end to end as saved: an early training cell references `xs` and `ys` before definition, and later cells reuse `loss` from prior execution. Training loops have no iteration cap or seed. Saved loss outputs are training examples, not held-out performance.
+The implementation notebook runs top to bottom: the data cell now precedes training, the duplicated cells are removed, the random seed is fixed and the training loop stops after 1,000 steps. Saved loss values are training loss on four examples, not held-out performance. Rendering the graph needs Graphviz's `dot`.
 
 Course source: [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero).
